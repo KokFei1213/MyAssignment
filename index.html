@@ -17,17 +17,35 @@
 
     <nav>
         <a href="#">Home</a>
-        <a href="#">Places</a>
-        <a href="#">Review</a>
-        <a href="#">FAQ</a>
-        <a href="#">Contact</a>
+        <a href="#places">Places</a>
+        <a href="#reviews">Review</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
         <a href="#">Language</a>
-        <a href="#" style="float:right;">Login</a>
+        
+        <span id="user-display" style="float:right; color:white; padding-right: 10px;"></span>
+        <a id="login-link" href="login.html" style="float:right;">Login</a>
+        <a id="logout-link" href="#" onclick="logout()" style="float:right; display:none;">Logout</a>
     </nav>
+    
+    <script>
+        // Check if a user is logged in
+        let user = localStorage.getItem("loggedInUser");
+        if (user) {
+            document.getElementById("user-display").innerText = "👤 " + user;
+            document.getElementById("login-link").style.display = "none"; // Hide login button
+            document.getElementById("logout-link").style.display = "inline"; // Show logout button
+        } 
+        function logout() {
+        localStorage.removeItem("loggedInUser");
+        window.location.reload(); // Refresh the page to update the UI
+    }
+        
+    </script>
 
     <h1>Where you want to travel?<br>We will always be there for you.</h1>
 
-    <div class="places">
+    <div id="places" class="places">
         <div class="place"><h3>Paris</h3><img src="paris.jpg" alt="Paris" width="100%"></div>
         <div class="place"><h3>London</h3><img src="london.jpg" alt="London" width="100%"></div>
         <div class="place"><h3>Rome</h3><img src="rome.jpg" alt="Rome" width="100%"></div>
@@ -36,19 +54,19 @@
         <div class="place"><h3>Kuala Lumpur</h3><img src="kl.jpg" alt="Kuala Lumpur" width="100%"></div>
     </div>
 
-    <div class="reviews">
+    <div id="reviews" class="reviews">
         <h2>Reviews</h2>
         <p><strong>Andy R:</strong> ★★★★☆ <br> They have some of the best places, highly recommended.</p>
         <p><strong>Joseph:</strong> ★★★★★ <br> ...</p>
     </div>
 
-    <div class="faq">
+    <div id="faq" class="faq">
         <h2>FAQ</h2>
         <p><strong>What is the best time to travel?</strong></p>
         <p>The best time depends on your destination. Summer is great for Europe, while winter is best for tropical places.</p>
     </div>
 
-    <div class="contact">
+    <div id="contact" class="contact">
         <h2>Contact</h2>
         <p>📧 Email | 📸 Instagram | 📞 Phone</p>
     </div>
