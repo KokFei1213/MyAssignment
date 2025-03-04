@@ -1,0 +1,65 @@
+.places {
+  padding: 25px ;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.popular-destionations {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+}
+
+.box {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.box:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
