@@ -1,15 +1,68 @@
-.places {
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 2;
+  padding: 100px 20px;
+}
+
+/* Ensure content is readable */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent Navbar */
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+.places, .reviews, .faq, .contact {
   padding: 25px ;
   width: 90%;
   margin: 0 auto;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255,);
+  color: black;
   border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd; /* Light gray border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .popular-destionations {
   font-size: 24px;
   font-weight: bold;
+  background-color: rgb(255, 255, 255,);
+  color: black;
+  border-radius: 10px;
   margin-bottom: 20px;
+  border: 2px solid #ddd; /* Light gray border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .grid-container {
@@ -63,3 +116,5 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
