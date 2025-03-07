@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - WorldTraveller</title>
-    <link rel="stylesheet" href="login.css">
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        .login-container { width: 300px; margin: 100px auto; padding: 20px; border: 1px solid #ccc; }
-        input { width: 90%; padding: 10px; margin: 10px 0; }
-        button { padding: 10px 15px; background: black; color: white; border: none; cursor: pointer; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Login to WorldTraveller</h1>
     <div class="login-container">
-        <form onsubmit="saveUsername(event)">
-            <input type="text" id="username" placeholder="Username" required><br>
-            <input type="password" id="password" placeholder="Password" required><br>
+        <h1>Login</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Enter your email" required>
+            <br>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <br>
             <button type="submit">Login</button>
         </form>
+        <p>Don't have an account? <a href="signup.html">Signup</a></p>
     </div>
 
-
     <script>
-        function saveUsername(event) {
-            event.preventDefault(); // Prevents form from reloading
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
             let username = document.getElementById("username").value;
-            localStorage.setItem("loggedInUser", username); // Save username in localStorage
-            window.location.href = "index.html"; // Redirect to homepage
-        }
+            let password = document.getElementById("password").value;
+    
+            let storedUser = localStorage.getItem("username");
+            let storedPass = localStorage.getItem("password");
+            let storedName = localStorage.getItem("name"); // Get stored name
+    
+            if (username === storedUser && password === storedPass) {
+                localStorage.setItem("loggedInUser", storedName); // Store name, not email
+                window.location.href = "index.html"; // Redirect to main page
+            } else {
+                alert("Invalid username or password");
+            }
+        });
     </script>
-
+    
 </body>
 </html>
+
+
 
 
 
