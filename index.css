@@ -36,7 +36,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent Navbar */
+  background-color: #333; 
   padding: 10px 20px;
 }
 .logo-container {
@@ -51,8 +51,9 @@ nav {
 
 .brand-name {
   font-size: 22px;
-  font-weight: bold;
   color: lightskyblue; /* "World Traveller" in blue */
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow */
 }
 
 nav a {
