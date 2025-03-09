@@ -75,5 +75,13 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 
