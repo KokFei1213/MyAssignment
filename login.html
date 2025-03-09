@@ -4,43 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - WorldTraveller</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
     <div class="login-container">
         <h1>Login</h1>
         <form id="login-form">
             <input type="text" id="username" placeholder="Enter your email" required>
-            <br>
+            <p class="error-message" id="emailError">Please enter a valid email address (e.g., user@example.com)</p>
             <input type="password" id="password" placeholder="Enter your password" required>
-            <br>
+            <p class="error-message" id="passwordError">Incorrect username or password</p>
             <button type="submit">Login</button>
         </form>
         <p>Don't have an account? <a href="signup.html">Signup</a></p>
     </div>
 
     <script>
+
         document.getElementById("login-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            
-            let username = document.getElementById("username").value;
-            let password = document.getElementById("password").value;
+        event.preventDefault();
+        
+        let username = document.getElementById("username");
+        let password = document.getElementById("password");
+        let emailError = document.getElementById("emailError");
+        let passwordError = document.getElementById("passwordError");
     
-            let storedUser = localStorage.getItem("username");
-            let storedPass = localStorage.getItem("password");
-            let storedName = localStorage.getItem("name"); // Get stored name
+        let storedUser = localStorage.getItem("username");
+        let storedPass = localStorage.getItem("password");
+        let storedName = localStorage.getItem("name");
     
-            if (username === storedUser && password === storedPass) {
-                localStorage.setItem("loggedInUser", storedName); // Store name, not email
-                window.location.href = "index.html"; // Redirect to main page
-            } else {
-                alert("Invalid username or password");
-            }
-        });
+        let valid = true;
+    
+        // Email validation (Proper format)
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(username.value)) { 
+            username.classList.add("error");
+            emailError.style.display = "block";
+            valid = false;
+        } else {
+            username.classList.remove("error");
+            emailError.style.display = "none";
+        }
+    
+        // Password validation (Check if user exists)
+        if (storedUser === null || storedPass === null || username.value !== storedUser || password.value !== storedPass) {
+            password.classList.add("error");
+            passwordError.style.display = "block";
+            valid = false;
+        } else {
+            password.classList.remove("error");
+            passwordError.style.display = "none";
+        }
+    
+        if (valid) {
+            localStorage.setItem("loggedInUser", storedName);
+            window.location.href = "index.html";
+        }
+    });
     </script>
     
 </body>
 </html>
+    
+       
 
 
 
