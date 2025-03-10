@@ -98,7 +98,7 @@ nav a {
 }
 
 
-.places, .reviews, .faq, .contact {
+.places, .reviews, .faq, .contact, .forum-container {
   padding: 25px ;
   width: 90%;
   margin: 0 auto;
@@ -171,6 +171,35 @@ nav a {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+h1 {
+  color: #333;
+}
+.banner {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Reduced margin */
+}
+p {
+  font-size: 18px;
+  color: #666;
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #cc5500;
 }
 
 
