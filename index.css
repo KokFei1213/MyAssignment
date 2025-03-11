@@ -24,6 +24,15 @@
   z-index: 2;
   padding: 50px 20px;
 }
+.hero-content h1 {
+  color: white;
+  font-size: 40px; /* Adjust the font size if needed */
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add a text shadow for better readability */
+}
+
 
 /* Ensure content is readable */
 body {
