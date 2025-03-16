@@ -64,11 +64,14 @@ nav {
   font-family: 'Pacifico', cursive;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow */
 }
-
 nav a {
   color: white;
+  font-weight: bold;
   margin: 0 15px;
   text-decoration: none;
+}
+nav a:hover {
+  transform: scale(1.1); /* Add scaling effect */
 }
 .navbar-login {
   float: right;
