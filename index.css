@@ -110,7 +110,7 @@ nav a:hover {
 }
 
 
-.places, .reviews, .faq, .contact, .forum-container {
+.places, .contact, .forum-container {
   padding: 25px ;
   width: 90%;
   margin: 0 auto;
@@ -215,5 +215,152 @@ p {
 .btn:hover {
   background-color: #cc5500;
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 40px 20px;
+}
 
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  color: #6c757d;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.section-header p {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #dee2e6;
+  margin-bottom: 15px;
+}
+
+.stars {
+  margin: 10px 0;
+}
+
+.checked {
+  color: orange;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.testimonial-country {
+  font-size: 16px;
+  color: gray;
+}
+
+.leave-review-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px; /* Space from text above */
+  margin-bottom: 50px; /* ⬅ Increases spacing from FAQ box */
+  transition: background-color 0.3s ease;
+}
+
+.leave-review-btn:hover {
+  background-color: #0056b3;
+}
+
+
+@media (min-width: 768px) {
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* ⬅ More spacing for larger screens */
+  }
+}
+
+.hotel-booking {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.hotel-booking h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.hotel-booking p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.book-now-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #0056b3;
+}
 

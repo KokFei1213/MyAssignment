@@ -20,7 +20,7 @@
         <a href="#">Home</a>
         <a href="#places">Places</a>
         <a href="#reviews">Review</a>
-        <a href="#faq">FAQ</a>
+        <a href="#booking">Hotel</a>
         <a href="#contact">Contact</a>
         
         <span id="user-display" style="float:right; color:white; padding-right: 10px;"></span>
@@ -43,19 +43,19 @@
                 <div class="box" onclick="location.href='paris.html';" style="background-image: url(Places_Photo/Paris.jpg);">
                     <div class="overlay">Paris</div>
                 </div>
-                <div class="box" style="background-image: url(Places_Photo/London.jpg);">
+                <div class="box" onclick="location.href='London.html';" style="background-image: url(Places_Photo/London.jpg);">
                     <div class="overlay">London</div>
                 </div>
                 <div class="box" onclick="location.href='Rome.html';" style="background-image: url(Places_Photo/Rome.jpg);">
                     <div class="overlay">Rome</div>
                 </div>
-                <div class="box" style="background-image: url(Places_Photo/Beijing.jpg);">
+                <div class="box" onclick="location.href='Beijing.html';" style="background-image: url(Places_Photo/Beijing.jpg);">
                     <div class="overlay">Beijing</div>
                 </div>
                 <div class="box" onclick="location.href='paris.html';" style="background-image: url(Places_Photo/Tokyo.jpg);">
                     <div class="overlay">Tokyo</div>
                 </div>
-                <div class="box" style="background-image: url(Places_Photo/KualaLumpur.jpg);">
+                <div class="box" onclick="location.href='KualaLumpur.html';" style="background-image: url(Places_Photo/KualaLumpur.jpg);">
                     <div class="overlay">Kuala Lumpur</div>
                 </div>
         </div>
@@ -138,18 +138,84 @@
         <a href="Forum/forum.html" class="btn">Visit the Forum</a>
     </div>
 
-    <div id="reviews" class="reviews">
-        <h2>Reviews</h2>
-        <p><strong>Andy R:</strong> ★★★★☆ <br> They have some of the best places, highly recommended.</p>
-        <p><strong>Joseph:</strong> ★★★★★ <br> The experience was amazing! A must-visit.</p>
-    </div>
+    <div id="reviews-container"></div>
+    <div id="reviews" class="reviews"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <section class="container">
+            <div class="section-header">
+                <h2>Review</h2>
+                <p><strong>See what our travelers have to say about their experiences with WorldTraveller!</strong></p>
+                <hr style="width: 50%; margin: 20px auto; border: 1px solid #ccc;">
+            </div>
 
-    <div id="faq" class="faq">
-        <h2>FAQ</h2>
-        <p><strong>What is the best time to travel?</strong></p>
-        <p>The best time depends on your destination. Summer is great for Europe, while winter is best for tropical places.</p>
-        <p><strong>Do you offer travel insurance?</strong></p>
-        <p>Yes, we provide different packages for travel insurance.</p>
+            <div class="testimonials">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <img class="testimonial-img" src="Review/LunaJohn.jpeg" alt="Luna John">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="testimonial-text">"This website made my trip planning so much easier! I found detailed travel guides, hidden gems, and even recommendations from other travelers."</p>
+                    <div class="testimonial-info">
+                        <p class="testimonial-name">Luna John</p>
+                        <p class="testimonial-country">Australia</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <img class="testimonial-img" src="Review/MarkSmith.webp" alt="Mark Smith">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="testimonial-text">"I love the community aspect of this site! The forum helped me connect with other travelers and get firsthand experiences."</p>
+                    <div class="testimonial-info">
+                        <p class="testimonial-name">Mark Smith</p>
+                        <p class="testimonial-country">Norway</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <img class="testimonial-img" src="Review/Lisa.jpeg" alt="Lisa">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="testimonial-text">"This site has everything a traveler needs—destination insights and easy hotel bookings. Highly recommend!"</p>
+                    <div class="testimonial-info">
+                        <p class="testimonial-name">Lisa</p>
+                        <p class="testimonial-country">Egypt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <h2><strong>Your Review is Important Too!</strong></h2>
+                <p style="font-size: 18px; margin-top: 10px;">We'd love to hear your feedback. Please leave a review below.</p>
+                <a href="review-page.html" class="leave-review-btn" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 18px; margin-top: 15px;">Leave a Review</a>
+            </div>
+        </section>
+ 
+
+
+    <div id="booking" class="booking">
+        <section class="hotel-booking">
+            <h2>Book a Hotel with Us</h2>
+            <p>Find comfortable stays at the best prices.</p>
+            <a href="booking-page.html" class="book-now-btn">Book Now</a>
+        </section>
     </div>
 
     <div id="contact" class="contact">

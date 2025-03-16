@@ -1,0 +1,48 @@
+body {
+    padding: 20px; 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    margin: 0;
+    color: black; 
+}
+
+h1 {
+    font-size: 60px; 
+    text-align: center; 
+    font-family: 'Georgia', serif; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px; 
+    text-align: center; 
+    color: cornflowerblue;
+    font-family: 'Verdana', sans-serif; 
+    margin-top: 40px;
+    margin-bottom: 20px; 
+}
+
+h3 {
+    font-size: 24px;
+    color: darkorchid; 
+    font-family: 'Tahoma', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 15px; 
+}
+
+img {
+    display: block; 
+    margin: 20px auto; 
+    width: 100%;
+    max-width: 800px;  
+    height: auto; 
+    
+}
+
+p {
+    font-size: 20px; 
+    font-weight: bold; 
+    text-align: justify; 
+    margin: 20px 0; 
+    font-family: 'Arial', sans-serif; 
+    color: black; }
