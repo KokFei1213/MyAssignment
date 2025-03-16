@@ -29,48 +29,6 @@
         <p>Don't have an account? <a href="signup.html">Signup</a></p>
     </div>
 
-    <script>
-
-        document.getElementById("login-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        
-        let username = document.getElementById("username");
-        let password = document.getElementById("password");
-        let emailError = document.getElementById("emailError");
-        let passwordError = document.getElementById("passwordError");
-    
-        let storedUser = localStorage.getItem("username");
-        let storedPass = localStorage.getItem("password");
-        let storedName = localStorage.getItem("name");
-    
-        let valid = true;
-    
-        // Email validation (Proper format)
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(username.value)) { 
-            username.classList.add("error");
-            emailError.style.display = "block";
-            valid = false;
-        } else {
-            username.classList.remove("error");
-            emailError.style.display = "none";
-        }
-    
-        // Password validation (Check if user exists)
-        if (storedUser === null || storedPass === null || username.value !== storedUser || password.value !== storedPass) {
-            password.classList.add("error");
-            passwordError.style.display = "block";
-            valid = false;
-        } else {
-            password.classList.remove("error");
-            passwordError.style.display = "none";
-        }
-    
-        if (valid) {
-            localStorage.setItem("loggedInUser", storedName);
-            window.location.href = "index.html";
-        }
-    });
-    </script>
     
 </body>
 </html>
