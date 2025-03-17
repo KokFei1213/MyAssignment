@@ -8,27 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../Logo.png">
     <link rel="stylesheet" href="paris.css">
-
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Paris</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cuisine">Cuisine</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#culture">Culture</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <div class="container mt-3">
+        <a href="../index.html" class="back-button">
+            <img src="Forum/back-arrow.png" alt="Back Button" style="width: 36px; height: 36px;">
+        </a>
+    </div>
     <!-- Header -->
     <div class="header">
         <h1>Welcome to Paris</h1>
@@ -36,84 +23,70 @@
     </div>
 
     <!-- Must-Visit Attractions -->
-    <div class="container my-5" id="attractions">
+    <div class="container my-5">
         <h2 class="section-title">Popular Attractions</h2>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="eiffel.jpg" class="card-img-top" alt="Eiffel Tower">
-                    <div class="card-body">
-                        <h5 class="card-title">Eiffel Tower</h5>
-                        <p class="card-text">The iconic symbol of Paris, offering breathtaking views of the city.</p>
-                    </div>
+        <div class="mt-4">
+            <div class="card">
+                <img src="Places_Photo/EiffelTower.avif" class="card-img-top" alt="Eiffel Tower">
+                <div class="card-body">
+                    <h5 class="card-title">Eiffel Tower</h5>
+                    <p class="card-text">The iconic symbol of Paris, offering breathtaking views of the city.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="louvre.jpg" class="card-img-top" alt="Louvre Museum">
-                    <div class="card-body">
-                        <h5 class="card-title">Louvre Museum</h5>
-                        <p class="card-text">Home to world-famous masterpieces like the Mona Lisa.</p>
-                    </div>
+            <div class="card mt-4">
+                <img src="Places_Photo/LouvreMuseum.jpeg" class="card-img-top" alt="Louvre Museum">
+                <div class="card-body">
+                    <h5 class="card-title">Louvre Museum</h5>
+                    <p class="card-text">Home to world-famous masterpieces like the Mona Lisa.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="notredame.jpg" class="card-img-top" alt="Notre Dame Cathedral">
-                    <div class="card-body">
-                        <h5 class="card-title">Notre Dame Cathedral</h5>
-                        <p class="card-text">A masterpiece of Gothic architecture with stunning stained glass windows.</p>
-                    </div>
+            <div class="card mt-4">
+                <img src="Places_Photo/NotreDameCathedral.jpeg" class="card-img-top" alt="Notre Dame Cathedral">
+                <div class="card-body">
+                    <h5 class="card-title">Notre Dame Cathedral</h5>
+                    <p class="card-text">A masterpiece of Gothic architecture with stunning stained glass windows.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Traditional Cuisine -->
-    <div class="container my-5" id="cuisine">
+    <div class="container my-5">
         <h2 class="section-title">Traditional Parisian Cuisine</h2>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="croissant.jpg" class="card-img-top" alt="Croissant">
-                    <div class="card-body">
-                        <h5 class="card-title">Croissant</h5>
-                        <p class="card-text">A buttery, flaky pastry perfect for breakfast.</p>
-                    </div>
+        <div class="mt-4">
+            <div class="card">
+                <img src="Places_Photo/Crossant.jpeg" class="card-img-top" alt="Croissant">
+                <div class="card-body">
+                    <h5 class="card-title">Croissant</h5>
+                    <p class="card-text">A buttery, flaky pastry perfect for breakfast.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="macaron.jpg" class="card-img-top" alt="Macaron">
-                    <div class="card-body">
-                        <h5 class="card-title">Macaron</h5>
-                        <p class="card-text">A delicate, colorful French dessert with a crunchy shell and soft center.</p>
-                    </div>
+            <div class="card mt-4">
+                <img src="Places_Photo/Macaron.jpg" class="card-img-top" alt="Macaron">
+                <div class="card-body">
+                    <h5 class="card-title">Macaron</h5>
+                    <p class="card-text">A delicate, colorful French dessert with a crunchy shell and soft center.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Culture and Festivals -->
-    <div class="container my-5" id="culture">
+    <div class="container my-5">
         <h2 class="section-title">Culture and Festivals</h2>
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="fashionweek.jpg" class="card-img-top" alt="Paris Fashion Week">
-                    <div class="card-body">
-                        <h5 class="card-title">Paris Fashion Week</h5>
-                        <p class="card-text">A globally influential event showcasing the latest haute couture trends.</p>
-                    </div>
+        <div class="mt-4">
+            <div class="card">
+                <img src="Places_Photo/ParisFashionWeek.jpg" class="card-img-top" alt="Paris Fashion Week">
+                <div class="card-body">
+                    <h5 class="card-title">Paris Fashion Week</h5>
+                    <p class="card-text">A globally influential event showcasing the latest haute couture trends.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="bastilleday.jpg" class="card-img-top" alt="Bastille Day">
-                    <div class="card-body">
-                        <h5 class="card-title">Bastille Day</h5>
-                        <p class="card-text">France’s national day celebrated with fireworks, parades, and festivities.</p>
-                    </div>
+            <div class="card mt-4">
+                <img src="Places_Photo/BastilleDay.jpg" class="card-img-top" alt="Bastille Day">
+                <div class="card-body">
+                    <h5 class="card-title">Bastille Day</h5>
+                    <p class="card-text">France’s national day celebrated with fireworks, parades, and festivities.</p>
                 </div>
             </div>
         </div>
@@ -123,7 +96,7 @@
     <div class="container my-5">
         <h2 class="section-title">Best Time to Visit</h2>
         <div class="card">
-            <img src="parisweather.jpg" class="card-img-top" alt="Paris Weather">
+            <img src="Places_Photo/ParisWeather.jpeg" class="card-img-top" alt="Paris Weather">
             <div class="card-body">
                 <p class="card-text">Spring (April - June) and autumn (September - November) offer the best weather with fewer crowds.</p>
             </div>
