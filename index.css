@@ -364,17 +364,45 @@ body {
   background-color: #0056b3;
 }
 
+/* 🔹 Make the layout stack on smaller screens */
+@media screen and (max-width: 480px) {
+  .contact {
+      max-width: 90%; /* Allow flexibility on small screens */
+      padding: 15px;
+  }
+
+  .contact-item {
+      flex-direction: column; /* Stack icon above text */
+      text-align: center;
+  }
+
+  .contact-icon {
+      margin-bottom: 5px; /* Add spacing below the icon */
+  }
+}
+
+.contact {
+  max-width: 400px; /* Limit the width */
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text for small screens */
+}
+
 .contact-item {
   display: flex;
-  align-items: center; /* Align logo and text vertically */
-  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Align items in a row */
+  justify-content: center;
+  gap: 10px; /* Add space between icon and text */
   margin: 15px 0;
 }
 
+
 .contact-icon {
-  width: 30px; /* Set the width of the icon */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add spacing between the icon and text */
+  width: 30px; /* Set fixed icon size */
+  height: auto;
 }
 * {
   margin: 0;
@@ -385,4 +413,198 @@ body {
 html, body {
   margin: 0;
   padding: 0;
+}
+/* 🔹 RESPONSIVENESS */
+
+/* 📱 Mobile Devices */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+  }
+}
+
+/* 📱 Small Mobile Devices */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .navbar-login, .navbar-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .testimonial-card {
+    padding: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+}
+  /* 🔹 GENERAL NAVBAR STYLING */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* 🔹 NAV LINKS (VISIBLE ON DESKTOP) */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+}
+
+/* 🔹 HAMBURGER MENU BUTTON */
+.menu-btn {
+    display: none; /* Hide by default on desktop */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+/* 🔹 SIDEBAR MENU (HIDDEN BY DEFAULT) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Keep sidebar hidden initially */
+    width: 250px;
+    height: 100%;
+    align-items: center; /* Center items horizontally */    
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0; /* Slide sidebar into view */
+}
+
+/* 🔹 CLOSE BUTTON INSIDE SIDEBAR */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 🔹 OVERLAY (DARK BACKGROUND WHEN MENU OPENS) */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* 🔹 RESPONSIVE DESIGN - SHOW HAMBURGER MENU ON MOBILE */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none !important; /* Ensure it is hidden on mobile */
+    }
+
+    .menu-btn {
+        display: block; /* Show hamburger icon */
+    }
+}
+.links {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    align-items: center;
+    gap: 20px; /* Space between links */
+    text-align: center;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* 🔹 STYLE SIDEBAR LINKS */
+.sidebar a {
+    display: block; /* Make links appear in a vertical list */
+    color: white; /* Change text color to white */
+    font-size: 18px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 🔹 HOVER EFFECT */
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 STYLE LOGIN/LOGOUT BUTTONS IN SIDEBAR */
+.sidebar .navbar-login, .sidebar .navbar-button {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: 80%;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.sidebar .navbar-login:hover, .sidebar .navbar-button:hover {
+    background: #0056b3;
 }

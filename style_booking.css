@@ -4,6 +4,33 @@ body {
     color: white;
     text-align: center;
 }
+.header {
+    display: grid;
+    grid-template-columns: 50px auto 50px; /* Left, Center, Right */
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+.header a {
+    display: flex;
+    align-items: center;
+}
+.header .spacer {
+    width: 50px; /* Ensures equal spacing on the right */
+}
+.back-button {
+    justify-self: start; /* Aligns the back button to the left */
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.back-button:hover {
+    opacity: 0.7;
+}
 .container {
     max-width: 600px;
     margin: 50px auto;

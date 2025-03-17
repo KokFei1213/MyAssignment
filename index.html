@@ -12,21 +12,66 @@
 </head>
 <body>
 
+    <!-- 🔹 Main Navigation Bar -->
     <nav>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button> <!-- Hamburger Icon -->
+
         <div class="logo-container">
             <img src="Logo.png" alt="World Traveller Logo" class="logo">
             <span class="brand-name">WorldTraveller</span>
         </div>
+
+        <div class="nav-links"> 
+            <a href="#">Home</a>
+            <a href="#places">Places</a>
+            <a href="#reviews">Review</a>
+            <a href="#booking">Hotel</a>
+            <a href="#contact">Contact</a>
+
+            <span id="user-display" style="color:white; padding-right: 10px;"></span>
+            <a id="login-link" href="login.html" class="navbar-login">Login</a>
+            <a id="logout-link" href="#" onclick="logout()" class="navbar-button" style="display:none;">Logout</a>
+        </div>
+    </nav>
+
+    <!-- 🔹 Sidebar Menu for Mobile -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✖</button> <!-- Close Button -->
         <a href="#">Home</a>
         <a href="#places">Places</a>
         <a href="#reviews">Review</a>
         <a href="#booking">Hotel</a>
         <a href="#contact">Contact</a>
-        
-        <span id="user-display" style="float:right; color:white; padding-right: 10px;"></span>
-        <a id="login-link" href="login.html" class="navbar-login">Login</a>
-        <a id="logout-link" href="#" onclick="logout()" class="navbar-button" style="float:right; display:none;">Logout</a>
-    </nav>
+        <a id="login-link-sidebar" href="login.html" class="navbar-login">Login</a>
+        <a id="logout-link-sidebar" href="#" onclick="logout()" class="navbar-button" style="display:none;">Logout</a>
+    </div>
+
+    <script>
+    function toggleMenu() {
+        let sidebar = document.getElementById('sidebar');
+        let overlay = document.getElementById('overlay');
+        let navLinks = document.querySelector('.nav-links');
+
+        sidebar.classList.toggle('active');
+        navLinks.style.display = sidebar.classList.contains('active') ? 'none' : 'flex';
+
+        if (sidebar.classList.contains('active')) {
+            overlay.classList.add('active'); // Show overlay
+            document.body.style.overflow = "hidden"; // Prevent scrolling
+        } else {
+            overlay.classList.remove('active'); // Hide overlay
+            document.body.style.overflow = ""; // Restore scrolling
+        }
+    }
+
+
+    // Ensure clicking overlay also closes menu
+    document.getElementById('overlay').addEventListener('click', function () {
+        toggleMenu();
+    });
+    </script>
+    <!-- 🔹 Overlay (For Clicking Outside the Menu) -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
     
     <div class="hero">
         <video autoplay loop muted playsinline>
@@ -218,21 +263,21 @@
             </section>
         </div>
 
-    <div id="contact" class="contact">
-        <h2>Contact</h2>
-        <div class="contact-item">
-            <img src="EmailLogo.png" alt="Email Icon" class="contact-icon">
-            <p>Email: support@worldtraveller.com</p>
+        <div id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-item">
+                <img src="EmailLogo.png" alt="Email Icon" class="contact-icon">
+                <p>Email: support@worldtraveller.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="InstagramLogo.png" alt="Instagram Icon" class="contact-icon">
+                <p>Instagram: @worldtraveller</p>
+            </div>
+            <div class="contact-item">
+                <img src="PhoneLogo.png" alt="Phone Icon" class="contact-icon">
+                <p>Phone: +06 7847 5555</p>
+            </div>
         </div>
-        <div class="contact-item">
-            <img src="InstagramLogo.png" alt="Instagram Icon" class="contact-icon">
-            <p>Instagram: @worldtraveller</p>
-        </div>
-        <div class="contact-item">
-            <img src="PhoneLogo.png" alt="Phone Icon" class="contact-icon">
-            <p>Phone: +60 18-78908912 </p>
-        </div>
-    </div>
 
     <footer>
         <p>&copy; WorldTraveller 2024-2025 </p>
