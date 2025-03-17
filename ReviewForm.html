@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review</title>
+    <link rel="stylesheet" href="ReviewForm.css">
+</head>
+<body>
+
+    <div class="review-container">
+        <h2>Your Review is Important!</h2>
+        <p>We'd love to hear your feedback. Please leave a review below.</p>
+
+        <form id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="country">Your Country</label>
+            <input type="text" id="country" name="country" required>
+
+            <label>Rate Our Service</label>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+
+            <label for="review">Your Honest Review</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit Review</button>
+        </form>
+    </div>
+
+</body>
+</html>
