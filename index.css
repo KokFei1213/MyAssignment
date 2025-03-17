@@ -171,7 +171,7 @@ nav a:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-.box:hover .overlay {
+.box:hover .overlaypd {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
