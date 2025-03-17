@@ -8,31 +8,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../Logo.png">
     <link rel="stylesheet" href="Rome.css">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Rome</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cuisine">Cuisine</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#culture">Culture</a></li>
-                </ul>
-            </div>
+    <nav class="navbar">
+        <button class="menu-btn" onclick="toggleMenu()">☰ MENU</button>
+        <div class="logo-container">
+            <img src="Logo.png" alt="World Traveller Logo" class="logo">
+            <span class="brand-name">WorldTraveller</span>
         </div>
+        <a id="login-link" href="login.html" class="navbar-login">Login</a>
     </nav>
-
-    <div class="container mt-3">
-        <a href="../index.html" class="back-button">
-            <img src="Forum/back-arrow.png" alt="Back Button" style="width: 36px; height: 36px;">
-        </a>
+    
+    <!-- 🔹 Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <h3>Main Menu</h3>
+        <a href="index.html">Home</a>
+        <a href="Forum/forum.html">Forum</a>
+        <a href="index_booking.html">Booking</a>
+        <h3>Top Destinations</h3>
+        <a href="paris.html">Paris</a>
+        <a href="London.html">London</a>
+        <a href="Rome.html">Rome</a>
+        <a href="Beijing.html">Beijing</a>
+        <a href="Tokyo.html">Tokyo</a>
+        <a href="KualaLumpur.html">Kuala Lumpur</a>
     </div>
+    
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+    </script>
+
     <!-- Header Section -->
     <div class="container text-center my-5">
         <h1 class="fw-bold">Welcome to Rome</h1>
