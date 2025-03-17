@@ -28,51 +28,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Hotel images mapping
     const hotelImages = {
-        "Paris": "images/Paris.jpg",
-        "London": "images/London.jpg",
-        "Rome": "images/Rome.jpg",
-        "Beijing": "images/Beijing.jpg",
-        "Tokyo": "images/Tokyo.jpg",
-        "Kuala Lumpur": "images/Kuala_Lumpur.jpg"
+        "Paris": "images_pay/Paris.jpg",
+        "London": "images_pay/London.jpg",
+        "Rome": "images_pay/Rome.jpg",
+        "Beijing": "images_pay/Beijing.jpg",
+        "Tokyo": "images_pay/Tokyo.jpg",
+        "Kuala Lumpur": "images_pay/Kuala_Lumpur.jpg"
     };
 
     // Room types data
     const roomTypes = {
         "Paris": [
-            { name: "Single Bed Room", img: "images/Paris-Single Bed Room.png", price: "$100" },
-            { name: "Double Bed Room", img: "images/Paris-Double Bed Room.png", price: "$150" },
-            { name: "Standard Suite", img: "images/Paris-Standard Suite.png", price: "$200" },
-            { name: "Presidential Suite", img: "images/Paris-Presidential Suite.png", price: "$500" }
+            { name: "Single Bed Room", img: "images_pay/Paris-Single Bed Room.png", price: "$100" },
+            { name: "Double Bed Room", img: "images_pay/Paris-Double Bed Room.png", price: "$150" },
+            { name: "Standard Suite", img: "images_pay/Paris-Standard Suite.png", price: "$200" },
+            { name: "Presidential Suite", img: "images_pay/Paris-Presidential Suite.png", price: "$500" }
         ],
         "London": [
-            { name: "Single Bed Room", img: "images/London-Single_Bed_Room.png", price: "$110" },
-            { name: "Double Bed Room", img: "images/London-Double_Bed_Room.png", price: "$160" },
-            { name: "Standard Suite", img: "images/London-Standard_Suite.png", price: "$210" },
-            { name: "Presidential Suite", img: "images/London-Presidential_Suite.png", price: "$520" }
+            { name: "Single Bed Room", img: "images_pay/London-Single_Bed_Room.png", price: "$110" },
+            { name: "Double Bed Room", img: "images_pay/London-Double_Bed_Room.png", price: "$160" },
+            { name: "Standard Suite", img: "images_pay/London-Standard_Suite.png", price: "$210" },
+            { name: "Presidential Suite", img: "images_pay/London-Presidential_Suite.png", price: "$520" }
         ],
         "Rome": [
-            { name: "Single Bed Room", img: "images/Rome-Single_Bed_Room.png", price: "$120" },
-            { name: "Double Bed Room", img: "images/Rome-Double_Bed_Room.png", price: "$170" },
-            { name: "Standard Suite", img: "images/Rome-Standard_Suite.png", price: "$220" },
-            { name: "Presidential Suite", img: "images/Rome-Presidential_Suite.png", price: "$530" }
+            { name: "Single Bed Room", img: "images_pay/Rome-Single_Bed_Room.png", price: "$120" },
+            { name: "Double Bed Room", img: "images_pay/Rome-Double_Bed_Room.png", price: "$170" },
+            { name: "Standard Suite", img: "images_pay/Rome-Standard_Suite.png", price: "$220" },
+            { name: "Presidential Suite", img: "images_pay/Rome-Presidential_Suite.png", price: "$530" }
         ],
         "Beijing": [
-            { name: "Single Bed Room", img: "images/Beijing-Single_Bed_Room.png", price: "$90" },
-            { name: "Double Bed Room", img: "images/Beijing-Double_Bed_Room.png", price: "$140" },
-            { name: "Standard Suite", img: "images/Beijing-Standard_Suite.png", price: "$190" },
-            { name: "Presidential Suite", img: "images/Beijing-Presidential_Suite.png", price: "$480" }
+            { name: "Single Bed Room", img: "images_pay/Beijing-Single_Bed_Room.png", price: "$90" },
+            { name: "Double Bed Room", img: "images_pay/Beijing-Double_Bed_Room.png", price: "$140" },
+            { name: "Standard Suite", img: "images_pay/Beijing-Standard_Suite.png", price: "$190" },
+            { name: "Presidential Suite", img: "images_pay/Beijing-Presidential_Suite.png", price: "$480" }
         ],
         "Tokyo": [
-            { name: "Single Bed Room", img: "images/Tokyo-Single_Bed_Room.png", price: "$130" },
-            { name: "Double Bed Room", img: "images/Tokyo-Double_Bed_Room.png", price: "$180" },
-            { name: "Standard Suite", img: "images/Tokyo-Standard_Suite.png", price: "$230" },
-            { name: "Presidential Suite", img: "images/Tokyo-Presidential_Suite.png", price: "$540" }
+            { name: "Single Bed Room", img: "images_pay/Tokyo-Single_Bed_Room.png", price: "$130" },
+            { name: "Double Bed Room", img: "images_pay/Tokyo-Double_Bed_Room.png", price: "$180" },
+            { name: "Standard Suite", img: "images_pay/Tokyo-Standard_Suite.png", price: "$230" },
+            { name: "Presidential Suite", img: "images_pay/Tokyo-Presidential_Suite.png", price: "$540" }
         ],
         "Kuala Lumpur": [
-            { name: "Single Bed Room", img: "images/Kuala_Lumpur-Single_Bed_Room.png", price: "$80" },
-            { name: "Double Bed Room", img: "images/Kuala_Lumpur-Double_Bed_Room.png", price: "$130" },
-            { name: "Standard Suite", img: "images/Kuala_Lumpur-Standard_Suite.png", price: "$180" },
-            { name: "Presidential Suite", img: "images/Kuala_Lumpur-Presidential_Suite.png", price: "$470" }
+            { name: "Single Bed Room", img: "images_pay/Kuala_Lumpur-Single_Bed_Room.png", price: "$80" },
+            { name: "Double Bed Room", img: "images_pay/Kuala_Lumpur-Double_Bed_Room.png", price: "$130" },
+            { name: "Standard Suite", img: "images_pay/Kuala_Lumpur-Standard_Suite.png", price: "$180" },
+            { name: "Presidential Suite", img: "images_pay/Kuala_Lumpur-Presidential_Suite.png", price: "$470" }
         ]
     };
 

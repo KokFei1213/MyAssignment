@@ -202,7 +202,7 @@ p {
 }
 .btn {
   display: inline-block;
-  background-color: #ff6600;
+  background-color: #007bff;
   color: white;
   padding: 12px 20px;
   font-size: 18px;
@@ -213,7 +213,7 @@ p {
   transition: 0.3s;
 }
 .btn:hover {
-  background-color: #cc5500;
+  background-color: #007bff;
 }
 body {
   font-family: Arial, sans-serif;
@@ -363,6 +363,7 @@ body {
 .book-now-btn:hover {
   background-color: #0056b3;
 }
+
 .contact-item {
   display: flex;
   align-items: center; /* Align logo and text vertically */
@@ -385,5 +386,3 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
-
