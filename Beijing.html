@@ -2,81 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../Logo.png">
-    <title>Basic HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beijing Travel Guide</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="beijing.css">
 </head>
+
 <body>
-    <h1>Beijing</h1>
-    <p>Beijing is the capital of China.</p>
-    <p>It is the political, cultural, and economic center of China.</p>
-    <h2>Popular Attractions</h2>
-    <h2>Must - Visit Landmarks</h2>
-    <ul>
-        <h3><li>The Forbidden City</li></h3>
-            <p> The imperial palace of the Ming and Qing dynasties. Its magnificent architecture and rich collections offer a glimpse into the grandeur and history of the ancient royal court.</p>
-        <h3><li> Tiananmen Square</li></h3>
-        <p>
-            One of the largest city squares in the world. You can watch the solemn flag - raising ceremony here.
 
-        </p>
-        <h2>Famous Scenic Spots</h2>
-        <h3><li>The Badaling Great Wall</li></h3>
-        <P>
-            An outstanding section of the Great Wall of China. It winds among overlapping mountains, presenting a magnificent and spectacular view.
-        </P>
-        <h3><li> The Summer Palace</li></h3>
-        <p>
-            A large - scale imperial garden. With its lakes, mountains, long corridors and ancient buildings, it is a place of great beauty.
-        </p>
+    <!-- Back Button -->
+    <div class="container mt-3">
+        <a href="../index.html" class="back-button">
+            <img src="Forum/back-arrow.png" alt="Back Button" style="width: 36px; height: 36px;">
+        </a>
+    </div>
 
-    </ul>
-    <h2>Hidden Gems</h2>
-    <ul>
-        <h3><li>Shijia Hutong Museum</li></h3>
-        <p>
-            Hidden deep in the hutongs, it showcases the courtyard culture and the life of ordinary people in old Beijing.
-        </p>
-        <h3><li>Xishiku Church</li></h3>
-        <p>A Gothic - style building with unique stained glass and exquisite sculptures.
+    <!-- Main Content -->
+    <div class="container py-5">
+        <h1 class="text-center mb-4 fw-bold">Beijing Travel Guide</h1>
+        <p class="text-center text-muted">Beijing is the capital of China, rich in history, culture, and iconic landmarks.</p>
 
-        </p>
+        <!-- Must-Visit Landmarks -->
+        <h2 class="section-title mt-5">Must-Visit Landmarks</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Forbidden_city.jpeg" alt="Forbidden City">
+                    <div class="card-body">
+                        <h5 class="fw-bold">The Forbidden City</h5>
+                        <p>A grand imperial palace of the Ming and Qing dynasties, offering a glimpse into China’s royal history.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Places_Photo/TiananmenSquare.jpg" alt="Tiananmen Square">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Tiananmen Square</h5>
+                        <p>One of the largest city squares in the world, famous for its historic significance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Famous Scenic Spots -->
+        <h2 class="section-title mt-5">Famous Scenic Spots</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Places_Photo/GreatWall.jpg" alt="Great Wall">
+                    <div class="card-body">
+                        <h5 class="fw-bold">The Badaling Great Wall</h5>
+                        <p>An outstanding section of the Great Wall with breathtaking views of the mountains.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Places_Photo/SummerPalace.jpg" alt="Summer Palace">
+                    <div class="card-body">
+                        <h5 class="fw-bold">The Summer Palace</h5>
+                        <p>A vast imperial garden featuring beautiful lakes, corridors, and ancient buildings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </ul>
-    <h2>Cuisine and Local Delicacies</h2>
-    <h2>Signature Dishes</h2>
-    
-        <h3>Beijing Roast Duck</h3>
-        <p>The crispy skin and tender meat are served with thin pancakes, scallions, cucumbers and sweet bean sauce, providing a rich taste experience.
+        <!-- Cuisine and Local Delicacies -->
+        <h2 class="section-title mt-5">Cuisine and Local Delicacies</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Places_Photo/Roastduck.jpeg" alt="Beijing Roast Duck">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Beijing Roast Duck</h5>
+                        <p>A famous dish known for its crispy skin and tender meat, served with thin pancakes and sweet bean sauce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Places_Photo/Mutton.jpg" alt="Instant-Boiled Mutton">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Instant-Boiled Mutton</h5>
+                        <p>Thinly sliced lamb cooked in a hotpot, dipped in sesame sauce for a flavorful experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        </p>
-        <h3>Instant - Boiled Mutton</h3>
-        <p>Cooked in a copper pot over charcoal fire with a clear soup base. The tender mutton is dipped in a sesame - paste sauce, filling your mouth with fragrance.
-        </p>
+        <!-- Culture and Festivals -->
+        <h2 class="section-title mt-5">Culture and Festivals</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Places_Photo/ChinaSpringFestival.webp" alt="Spring Festival">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Spring Festival</h5>
+                        <p>Beijing is bustling with traditional performances, delicious snacks, and vibrant celebrations during this festival.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Places_Photo/MidAutumn.jpeg" alt="Mid-Autumn Festival">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Mid-Autumn Festival</h5>
+                        <p>A time for family reunions and enjoying mooncakes under the full moon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    
-    <h2>Must - Try Street Foods</h2>
-    <h3>Douzhi with Jiaquan</h3>
-    <p>Douzhi has a unique taste and is paired with crispy jiaquan, a favorite of old - Beijing residents.
+    </div>
 
-    </p>
-    <h3>Zha Jiang Mian</h3>
-    <P>flavored fried sauce is served with chewy noodles and various side dishes, with a strong aroma.
-    </P>
-    <h2>Culture and Festivals</h2>
-    <p>Beijing is a city with a rich cultural heritage.</p>
-    <p>It hosts various traditional festivals throughout the year, such as the Spring Festival and Mid-Autumn Festival.</p>
-    <h3>Spring Festival</h3>
-    <p>It is bustling with traditional performances, delicious snacks and handicrafts.
-
-    </p>
-    <h3>The Mid - Autumn Festival</h3>
-    <p>It is a time for family reunions and enjoying mooncakes under the full moon.
-    </p>
-    
-    
-
-
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

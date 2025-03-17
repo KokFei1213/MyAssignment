@@ -2,151 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rome - The Eternal City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../Logo.png">
-    <link rel="stylesheet" href="rome.css">
-    <title>Basic HTML Template</title>
+    <link rel="stylesheet" href="Rome.css">
 </head>
 <body>
-    <h1>Rome</h1>
-    <img src="k.jpg" alt="Rome" width="100%" height="500px">
-    <h2>Rome, The Eternal City of History, Art, and Culture
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rome</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cuisine">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#culture">Culture</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Header Section -->
+    <div class="container text-center my-5">
+        <h1 class="fw-bold">Welcome to Rome</h1>
+        <p class="lead">The Eternal City of History, Art, and Culture</p>
+    </div>
 
-    
+    <!-- Popular Attractions -->
+    <div class="container my-5" id="attractions">
+        <h2 class="section-title">Popular Attractions</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="colosseum.webp" class="card-img-top" alt="Colosseum">
+                    <div class="card-body">
+                        <h5 class="card-title">The Colosseum</h5>
+                        <p class="card-text">A grand amphitheater that once hosted gladiatorial battles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="vatican.webp" class="card-img-top" alt="Vatican City">
+                    <div class="card-body">
+                        <h5 class="card-title">Vatican City</h5>
+                        <p class="card-text">The spiritual and artistic heart of the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pantheon.webp" class="card-img-top" alt="Pantheon">
+                    <div class="card-body">
+                        <h5 class="card-title">The Pantheon</h5>
+                        <p class="card-text">A magnificent temple dedicated to all gods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
-    <h3 style="text-align: left;"><li>The  Colosseum</li>
-    <li>The Vatican City (St. Peter’s Basilica & The Sistine Chapel)
+    <!-- Traditional Cuisine -->
+    <div class="container my-5" id="cuisine">
+        <h2 class="section-title">Traditional Roman Cuisine</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cacio.webp" class="card-img-top" alt="Cacio e Pepe">
+                    <div class="card-body">
+                        <h5 class="card-title">Cacio e Pepe</h5>
+                        <p class="card-text">A classic pasta with pecorino cheese and black pepper.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="carbonara.webp" class="card-img-top" alt="Carbonara">
+                    <div class="card-body">
+                        <h5 class="card-title">Carbonara</h5>
+                        <p class="card-text">A creamy pasta dish with eggs, cheese, and guanciale.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="amatriciana.webp" class="card-img-top" alt="Amatriciana">
+                    <div class="card-body">
+                        <h5 class="card-title">Amatriciana</h5>
+                        <p class="card-text">A tomato-based pasta sauce with guanciale and pecorino cheese.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </li>
-    <li>
-        The Pantheon
+    <!-- Culture and Festivals -->
+    <div class="container my-5" id="culture">
+        <h2 class="section-title">Rome’s Culture and Festivals</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="history.webp" class="card-img-top" alt="Rome's Culture">
+                    <div class="card-body">
+                        <h5 class="card-title">A City of History and Art</h5>
+                        <p class="card-text">Rome’s ruins and monuments reflect its glorious past.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="festivals.webp" class="card-img-top" alt="Festivals of Rome">
+                    <div class="card-body">
+                        <h5 class="card-title">Major Festivals</h5>
+                        <p class="card-text">Experience Easter celebrations, religious feasts, and cultural events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Rome Travel Guide | All rights reserved</p>
+    </div>
 
-    </li>
-    <h2>
-        The Colosseum: Rome’s Timeless Icon of Glory and Spectacle
-        <img src="678.webp" alt="Colosseum" width="100%" height="500px">
-
-
-    </h2>
-    <p>
-        Standing as a majestic symbol of Ancient Rome’s power and ingenuity, the Colosseum is one of the world’s most breathtaking architectural masterpieces.
-    </p>
-    <P>
-        Built in AD 80 under Emperor Titus, this grand amphitheater once hosted gladiatorial battles, wild animal hunts, and grand public spectacles that entertained tens of thousands of spectators.
-
-    </P>
-    <p>
-        With its towering arches and intricate underground chambers, the Colosseum remains a testament to Roman engineering brilliance. 
-    </p>
-
-    <h2>
-        Vatican City: The Spiritual and Artistic Heart of the World
-        <img src="00000.webp" alt="Vatican City" width="100%" height="500px">
-
-
-    </h2>
-    <p>
-        Nestled within the heart of Rome, Vatican City is the world’s smallest independent state yet holds an immense cultural and spiritual significance. 
-    </p>
-    <p>
-        As the center of the Roman Catholic Church and the residence of the Pope, this sacred enclave attracts millions of pilgrims and visitors each year.  
-    </p>
-    <P>
-        Home to some of the most magnificent artistic treasures, Vatican City boasts the awe-inspiring St.
-    </P>
-    <h2>
-        The Pantheon: Rome’s Eternal Temple of the Gods
-        <IMG src="99999.webp" alt="Pantheon" width="100%" height="500px">
-
-    </h2>
-    <p>
-        A masterpiece of ancient Roman engineering and a symbol of divine perfection, the Pantheon stands as one of the most well-preserved monuments of antiquity.
-    </p>
-    <P>
-        Originally built as a temple to honor all gods, this architectural wonder was later transformed into a Christian church, preserving its grandeur for nearly two millennia.
-    </P>
-    <P>
-        Its breathtaking dome, the largest unreinforced concrete dome in the world, features the iconic oculus—a celestial eye that floods the temple with natural light, creating an ethereal atmosphere.
-    </P>
-    <h2>
-        Classic Roman Dishes
-    </h2>
-    <h3>
-        Cacio e Pepe
-        <img src="u=28844531,1213666840&fm=253&fmt=auto&app=138&f=JPEG.webp" alt="Cacio e Pepe" width="100%" height="500px">
-    </h3>
-    <p>
-        A classic Roman pasta made with pecorino cheese and black pepper, creating a creamy, flavorful sauce.
-    </p>
-    <h3>
-        Carbonara 
-        <img src="55555.webp" alt="Carbonara" width="100%" height="500px">
-    </h3>
-    <p>
-        A rich and creamy pasta dish made with eggs, pecorino cheese, guanciale (cured pork cheek), and black pepper—without cream!
-    </p>
-    <h3>
-        Amatriciana
-        <img src="mmmmm.webp"Amatriciana" width="100%" height="500px">
-    </h3>
-    <p>
-        A tomato-based pasta sauce with guanciale and pecorino cheese, offering a perfect balance of savory and tangy flavors.
-    </p>
-    <h2>
-        Rome’s Culture and Festivals
-    </h2>
-    <h3>
-        A City of History, Art, and Faith
-        <img src="qqq.webp" alt="Rome's Culture" width="100%" height="500px">
-    </h3>
-    <P>
-        The Legacy of Ancient Rome – The city’s ruins, from the Colosseum to the Roman Forum, serve as reminders of its glorious past as the heart of the Roman Empire.
-    </P>
-    <h3>
-        Major Festivals and Celebrations
-
-    </h3>
-    <img src="mz.webp" alt="Festivals of Rome" width="100%" height="500px">
-    <P>
-        Religious Festivals
- • Easter (Pasqua) – March/April
-One of the most significant celebrations in Rome, with Papal Mass at St. Peter’s Basilica, the Via Crucis (Way of the Cross) at the Colosseum, and city-wide feasts.
-
-    </P>
-    <h2>
-        Best Time to Visit Rome & Weather Guide
-
-    </h2>
-    <h3>
-        Best Seasons to Visit Rome
-
-
-    </h3>
-    <img src="iiii.webp" alt="Rome Seasons" width="100%" height="500px">
-    <p>
-        Spring (March – May) – The Ideal Season
- • Weather: Mild and pleasant (10°C – 22°C / 50°F – 72°F).
-
-    </p>
-    <h3>
-        When to Avoid Crowds
-
-    </h3>
-    <P>
-        Best months for fewer tourists: November to early December, January to early March.
-        • Most crowded times: June to August (summer) and around Easter.
-         
-    </P>
-    <h3>
-        Final Recommendation  
-    </h3>
-    <p>
-        For the best experience, visit in spring (April – May) or autumn (September – October) when the weather is perfect, crowds are manageable, and the city is at its most vibrant.
-    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
